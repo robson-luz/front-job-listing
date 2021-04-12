@@ -1,5 +1,5 @@
 # JobListing
-Project created as a proof of concept(PoC) to learn the basic/intermediate Angular concepts.
+Project created as proof of concept(PoC) to learn the basic/intermediate Angular concepts.
 It uses Bootstrap for html design and Json server to mock an API.
 
 
