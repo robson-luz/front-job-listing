@@ -1,0 +1,26 @@
+.col
+{
+  padding-bottom: 20px;
+}
+
+.card
+{
+  border-radius: 0.50rem;
+}
+
+.category
+{
+  color: darkgrey;
+  font-size: small;
+}
+
+.card-text
+{
+  color: #6d6c6ceb;
+}
+
+.btn-card
+{
+  background-color: #ebefff;
+  color: #778bd2
+}

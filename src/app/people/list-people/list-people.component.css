@@ -1,0 +1,65 @@
+.col
+{
+  padding-bottom: 20px;
+}
+
+.card
+{
+  border-radius: 0.50rem;
+}
+
+.card-title
+{
+  color: #243c94;
+  margin-bottom: 0px;
+}
+
+.card-role
+{
+  color: #2040a8;
+  font-size: 12pt;
+}
+
+.category
+{
+  color: darkgrey;
+  font-size: small;
+}
+
+.card-text
+{
+  color: #6d6c6ceb;
+  font-size: 13pt;
+}
+
+.btn-card
+{
+  background-color: #ebefff;
+  color: #778bd2
+}
+
+.btn-card:hover
+{
+  background-color: #ced6f5;
+}
+
+.bg-primary-alt
+{
+  background-color: white;
+  color: blue;
+  border: blue 1px solid;
+  border-radius: 50rem;
+}
+
+.bg-purple-alt
+{
+  background-color: white;
+  color: #53458f;
+  border: #53458f 1px solid;
+  border-radius: 50rem;
+}
+
+.star-checked
+{
+  color: orange;
+}

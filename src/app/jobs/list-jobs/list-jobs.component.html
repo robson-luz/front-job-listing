@@ -1,0 +1,30 @@
+<br>
+<div class="container">
+  <div class="row row-cols-md-2">
+    <!-- <app-card-job *ngFor="let item of jobsData"></app-card-job> -->
+    <div class="col" *ngFor="let job of jobsData">
+      <div class="card">
+        <div class="card-body">
+          <img
+            class="float-right"
+            [src]="sanitize(job.thumbnail)"
+            height="40"
+            width="45"
+          />
+          <label class="category"> {{job.category}} </label>
+          <h5 class="card-title">{{job.title}} {{job.role}}</h5>
+          <p><i class="fas fa-map-marker-alt"></i> {{job.area}} <span class="badge bg-primary-alt">{{job.type}}</span> </p>
+          <p><b>${{job.income}}({{job.workload}} hrs)</b></p>
+          <div>
+            <span style="margin-right: 5px;" *ngFor="let req of job.requirements" class="badge bg-purple-alt">{{req}}</span>
+          </div>
+          <br>
+          <span class="card-text">{{job.publishDate}}</span>
+        </div>
+        <button type="button" class="btn btn-card card-footer">
+          <b>Apply</b>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
