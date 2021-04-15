@@ -1,8 +1,10 @@
 <br>
 <div class="container">
+  <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search">
+  </div>
   <div class="row row-cols-md-2">
-    <!-- <app-card-job *ngFor="let item of jobsData"></app-card-job> -->
-    <div class="col" *ngFor="let job of jobsData">
+    <div class="col" *ngFor="let job of jobsData | filter: searchText">
       <div class="card">
         <div class="card-body">
           <img

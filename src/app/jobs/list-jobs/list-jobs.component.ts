@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListJobsComponent implements OnInit {
 
   jobsData: Job;
+  searchText: string;
 
   constructor(private jobsService: JobsService, private sanitizer: DomSanitizer) { }
 

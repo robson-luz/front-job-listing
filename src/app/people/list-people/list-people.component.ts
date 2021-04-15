@@ -10,6 +10,7 @@ import { People } from '../model/people.model';
 export class ListPeopleComponent implements OnInit {
 
   peopleData: People;
+  searchText: string;
 
   constructor(private peopleService: PeopleService) { }
 
