@@ -3,17 +3,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListJobsComponent } from './list-jobs/list-jobs.component';
 import { JobsRoutingModule } from './jobs-routing.module';
-import { CardJobComponent } from './card-job/card-job.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [ListJobsComponent, CardJobComponent],
+  declarations: [ListJobsComponent],
   imports: [
     CommonModule,
     JobsRoutingModule,
     FormsModule,
     SharedModule
   ],
-  exports: [ListJobsComponent, CardJobComponent]
+  exports: [ListJobsComponent]
 })
 export class JobsModule { }

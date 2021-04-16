@@ -1,14 +1,17 @@
+import { SearchFormComponent } from './search-form/search-form.component';
 import { FilterPipe } from './filter.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [FilterPipe],
+  declarations: [FilterPipe, SearchFormComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
-  exports: [FilterPipe]
+  exports: [FilterPipe, SearchFormComponent]
 })
 export class SharedModule { }

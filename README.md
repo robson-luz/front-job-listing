@@ -2,6 +2,14 @@
 Project created as proof of concept(PoC) to learn basic/intermediate Angular concepts.
 It uses Bootstrap for html design and Json server to mock an API.
 
+jobs api:
+cd api/jobs
+json-server --watch list.json --port 3005
+
+people api:
+cd api/people
+json-server --watch list.json --port 3006
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
 ## Development server

@@ -1,8 +1,6 @@
 <br>
 <div class="container">
-  <div class="form-group">
-    <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search">
-  </div>
+  <app-search-form (searchTextEvent)="searchText = $event"></app-search-form>
   <div class="row row-cols-md-2">
     <div class="col" *ngFor="let job of jobsData | filter: searchText">
       <div class="card">

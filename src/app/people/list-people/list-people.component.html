@@ -1,19 +1,10 @@
 <br>
 <div class="container">
-  <div class="form-group">
-    <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search">
-  </div>
+  <app-search-form (searchTextEvent)="searchText = $event"></app-search-form>
   <div class="row row-cols-md-2">
-    <!-- <app-card-people *ngFor="let item of peopleData"></app-card-people> -->
     <div class="col" *ngFor="let person of peopleData | filter: searchText">
       <div class="card">
         <div class="card-body">
-          <!-- <img
-            class="float-right"
-            src="assets/angular_logo.png"
-            height="40"
-            width="45"
-          /> -->
           <label class="category"> {{person.category}} </label>
           <h4 class="card-title">{{person.firstname}} {{person.lastname}} </h4>
           <label class="card-role">{{person.role}}</label>
@@ -34,9 +25,6 @@
           <span style="color:green" *ngIf="person.recommend"> <i class="far fa-thumbs-up"></i> Recommends</span>
           <span style="color:red" *ngIf="!person.recommend"><i class="far fa-thumbs-down"></i> Does not recommend</span>
         </div>
-        <!-- <button type="button" class="btn btn-card card-footer">
-          <b>Button</b>
-        </button> -->
       </div>
     </div>
   </div>
